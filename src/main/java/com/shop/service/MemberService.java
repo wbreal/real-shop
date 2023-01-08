@@ -25,12 +25,6 @@ public class MemberService {
         return memberRepository.save(memberEntity);
     }
 
-    public Collection<MemberEntity> getMembers(final Pageable pageable) {
-//		return memberRepository.findAllBy(pageable);
-        return null;
-    }
-
-
     public boolean existsById(Long memberId) {
         return memberRepository.existsById(memberId);
     }

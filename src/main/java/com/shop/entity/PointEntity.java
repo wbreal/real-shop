@@ -27,7 +27,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class PointEntity {
     @Id
-//	@GeneratedValue(strategy = GenerationType.SEQUENCE)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "seq")
     private Long seq;
