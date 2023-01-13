@@ -3,6 +3,7 @@ package com.shop.controller;
 import com.shop.entity.MemberEntity;
 import com.shop.model.request.MemberRequest;
 import com.shop.service.MemberService;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
+@Api(tags = { "member" })
 @RestController
 @RequestMapping("/members")
 @RequiredArgsConstructor

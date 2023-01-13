@@ -41,7 +41,15 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation 'org.apache.commons:commons-lang3:3.12.0'
 
+    // Swagger 2
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+//    implementation "io.springfox:springfox-bean-validators:2.9.2"
+    // https://mvnrepository.com/artifact/de.pentabyte/springfox-enum-plugin
+//    implementation group: 'de.pentabyte', name: 'springfox-enum-plugin', version: '1.3.0'
+
 }
+
 
 tasks.named('test') {
     useJUnitPlatform()
